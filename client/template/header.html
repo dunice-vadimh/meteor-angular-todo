@@ -1,0 +1,19 @@
+
+<template name="header">
+    <header>
+        <h1>Todo List ({{incompleteCount}})</h1>
+
+        <label class="hide-completed">
+            <input type="checkbox" checked="{{hideCompleted}}" />
+            Hide Completed Tasks
+        </label>
+
+        {{#if currentUser}}
+        <form class="new-task">
+            <input type="text" name="text" placeholder="Type to add new tasks" />
+            <!--<input type="submit" value="Add">-->
+        </form>
+        {{/if}}
+
+    </header>
+</template>

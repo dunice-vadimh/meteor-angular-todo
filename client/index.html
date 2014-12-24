@@ -1,0 +1,13 @@
+<head>
+    <title>Meteor-Todo</title>
+</head>
+<body>
+    {{> navbar}}
+    <div class="container">
+        {{#if isPage 'classic'}}
+        {{> login}}
+        {{> header}}
+        {{/if}}
+    </div>
+</body>
+

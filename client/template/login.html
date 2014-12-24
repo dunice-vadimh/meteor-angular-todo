@@ -1,0 +1,16 @@
+<template name="login">
+    <h1>
+        {{#unless currentUser}}
+        Login to continue
+        {{/unless}}
+    </h1>
+
+    <p>
+        {{> loginButtons}}
+    </p>
+    <p>
+        {{#if currentUser}}
+        You are now logged in.
+        {{/if}}
+    </p>
+</template>
